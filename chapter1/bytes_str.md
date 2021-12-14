@@ -10,4 +10,3 @@
         Unicode
     encode | Library
         bytes
-
