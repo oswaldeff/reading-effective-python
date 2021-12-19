@@ -10,4 +10,5 @@
         Unicode
     encode | Library
         bytes
-    
+- These two cases are possible: add bytes to bytes and add string to string (But, It is couldn't to add bytes to string)
+- When compare to bytes with bytes and string with string, comparison operator(asser) can be used (couldn't bytes with string)
