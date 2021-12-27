@@ -37,3 +37,14 @@ print(b'one' + b'two')
 
 # add string to string
 print('one' + 'two')
+
+# formatting
+print(b'red %s' % 'blue') # erorr
+print('red %s' % b'blue') # red b'blue'
+
+# when using c style, there are 4 problems
+#1
+key = 'my_var'
+value = 1.234
+formatted = '%-10s = %.2f' % (key, value)
+print(formatted) # my_var = 1.23
