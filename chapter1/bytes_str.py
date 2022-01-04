@@ -50,3 +50,22 @@ formatted = '%-10s = %.2f' % (key, value)
 print(formatted) # my_var = 1.23
 formatted = '%-10s = %.2f' % (value, key)
 print(formatted) # error
+
+#2 readable problem
+pantry = [
+    ('apple', 1.25),
+    ('banana', 2.5),
+    ('cherry', 15),
+]
+
+'title method'
+
+for i, (item,count) in enumerate(pantry):
+    print('#%d: %-10s = %.2f % (i, item, count)') # >>> #0:apple = 1.25     #1:banana = 2.50    #2:cherry = 15.00
+
+for i, (item, count) in enumerate(pantry):
+    print('#%d: %-10s = %d % (i+1, item.title(), round(count))') # >>> #1: apple = 1    #2:banana = 2   #3:cherry = 15
+
+#3 using str.format many times, problem occur
+
+#4 
